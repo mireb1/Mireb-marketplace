@@ -1,0 +1,167 @@
+/* Admin Page Styles */
+.admin-page {
+  padding: 2rem 0;
+}
+
+.admin-title {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #17a2b8;
+}
+
+/* Stats Cards */
+.stat-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-icon {
+  font-size: 2rem;
+}
+
+/* Admin Sections */
+.admin-section {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.admin-section .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 1.5rem;
+}
+
+.admin-section h2 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+/* Products Table */
+.products-table img {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.products-table .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.category-badge {
+  background-color: #17a2b8;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* Category Cards in Admin */
+.category-admin-card {
+  text-align: center;
+  padding: 1rem;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.category-admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-admin-card .category-icon {
+  font-size: 2rem;
+  color: #17a2b8;
+  margin-bottom: 1rem;
+}
+
+.add-category {
+  border: 2px dashed #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.add-category:hover {
+  border-color: #17a2b8;
+  background-color: #f0f9fa;
+}
+
+.add-category .add-icon {
+  font-size: 2.5rem;
+  color: #17a2b8;
+}
+
+/* Icon Selection */
+.icon-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.icon-btn i {
+  font-size: 1.2rem;
+}
+
+/* Image Upload Preview */
+.image-preview {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .stat-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+  }
+  
+  .admin-title {
+    font-size: 1.8rem;
+  }
+  
+  .admin-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .products-table {
+    font-size: 0.8rem;
+  }
+}
