@@ -8,9 +8,11 @@ const connectDB = async () => {
     });
 
     console.log(`MongoDB connecté: ${conn.connection.host}`);
+    return true;
   } catch (error) {
-    console.error(`Erreur: ${error.message}`);
-    process.exit(1);
+    console.error(`Erreur de connexion MongoDB: ${error.message}`);
+    console.log('Application démarrée sans connexion à MongoDB - certaines fonctionnalités peuvent ne pas fonctionner');
+    return false;
   }
 };
 

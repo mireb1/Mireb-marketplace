@@ -10,7 +10,11 @@ const connectDB = require('./server/config/db');
 dotenv.config();
 
 // Connexion à la base de données
-connectDB();
+// L'application continuera même si la connexion à MongoDB échoue
+connectDB().catch(err => {
+  console.error('Erreur lors de la connexion à MongoDB:', err.message);
+  console.log('Application démarrée en mode dégradé - sans base de données');
+});
 
 // Routes
 const authRoutes = require('./server/routes/auth');
